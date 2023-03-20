@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+		<div class="header">
+            <h1>Kalkulator BMI</h1>
+        </div>
+		<div class="content">
+            <p>Body Mass Index atau disingkat BMI adalah salah satu cara mengetahui berat badan ideal yang diukur berdasarkan berat dan tinggi badan Anda. Dengan menghitungnya menggunakan rumus BMI, Anda bisa melihat apakah status berat badan Anda termasuk kategori normal, kurang, berlebih, atau bahkan obesitas</p>
+            <form>
+                <label>Jenis Kelamin</label>
+                <div class="radioJK">
+                    <label>Laki - laki
+                        <input type="radio" name="radio" id="laki">
+                    </label>
+                    <label>Perempuan
+                        <input type="radio" name="radio" id="perempuan">
+                      </label>
+                </div>
+                <label>Umur</label>    
+                <input type="text" id="umur">
+                <label>Berat Badan (kg)</label>    
+                <input type="text" id="berat">
+                <label>Tinggi Badan (cm)</label>
+                <input type="text" id="tinggi">
+                <div class="tombol">
+                    <input type="button" value="Hitung" onclick="hitungBMI()">
+                    <input type="button" value="Reset" onclick="resetForm()">
+                </div>
+            </form>
+            <div id="hasil"></div>
+            <div id="keterangan"></div>
+        </div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
